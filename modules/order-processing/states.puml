@@ -1,0 +1,6 @@
+@startuml
+[*] --> Created
+Created --> PaymentPending
+PaymentPending --> Confirmed
+Confirmed --> Fulfilled
+@enduml
