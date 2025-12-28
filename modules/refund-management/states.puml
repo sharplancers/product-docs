@@ -1,0 +1,6 @@
+@startuml
+[*] --> Requested
+Requested --> Approved
+Approved --> Processing
+Processing --> Completed
+@enduml
