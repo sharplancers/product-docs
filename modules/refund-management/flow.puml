@@ -1,0 +1,13 @@
+@startuml
+actor "Support Agent" as Agent
+participant "Admin Portal" as Admin
+participant "Refund Service" as Refund
+participant "Payment Service" as Payment
+participant "Accounting System" as Accounting
+
+Agent -> Admin : Submit refund request
+Admin -> Refund : Create refund
+Refund -> Payment : Process refund
+Refund -> Accounting : Record transaction
+Refund --> Admin : Refund completed
+@enduml
